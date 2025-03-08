@@ -990,6 +990,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Terrain Generation",
+            "id": "49f1981e-9d4a-4c8c-a170-49a1a04c4439",
+            "actions": [
+                {
+                    "name": "Generate",
+                    "type": "Button",
+                    "id": "13de5898-0962-42ed-bd71-e5c2547c8f65",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3739b17-6ea5-45d2-8762-b63af2a38520",
+                    "path": "<Keyboard>/#(G)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Generate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
