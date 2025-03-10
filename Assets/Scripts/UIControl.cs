@@ -1,3 +1,4 @@
+using System.CodeDom.Compiler;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class UIControl : MonoBehaviour
     public Slider perlinDensity2;
     public Slider perlinMagnitude2;
     public Slider perlinPower2;
+
+    public float generatedWaterLevel = 0f;
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class UIControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G)) // 'G' 키를 누르면 지형 생성
         {
             meshGenerator.GenerateTerrain();
+            generatedWaterLevel = meshGenerator.waterLevel;
         }
     }
 }
