@@ -32,18 +32,18 @@ public class CameraControl : MonoBehaviour
         // 회전이동
         if (Input.GetKey(KeyCode.Q))
         {
-            horizontalRotation -= horizontalRotationSpeed;
+            horizontalRotation += horizontalRotationSpeed;
         }
         if (Input.GetKey(KeyCode.E)) {
-            horizontalRotation += horizontalRotationSpeed;
+            horizontalRotation -= horizontalRotationSpeed;
         }
         if (Input.GetKey(KeyCode.R))
         {
-            verticalRotation -= verticalRotationSpeed;
+            verticalRotation += verticalRotationSpeed;
         }
         if (Input.GetKey(KeyCode.F))
         {
-            verticalRotation += verticalRotationSpeed;
+            verticalRotation -= verticalRotationSpeed;
         }
 
         // Mathf.Cos(), Mathf.Sin() 사용위해 수평/수직 회전을 60분법에서 호도법으로 변환
