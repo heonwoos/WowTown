@@ -1250,10 +1250,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c84b001edcde34d967fb32f2dfbeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiControl: {fileID: 1777304965}
   horizontalRotationSpeed: 1
   verticalRotationSpeed: 1
-  movementSpeed: 0.5
-  horizontalRotation: 45
+  movementSpeedPerDistance: 0.05
+  zoomSpeed: 0.2
+  minMovementSpeed: 0
+  maxMovementSpeed: 2
+  minZoom: 1
+  maxZoom: 30
+  focusOffsetHeight: 1
 --- !u!1 &340725609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,6 +4944,7 @@ MonoBehaviour:
   perlinDensity2: {fileID: 1116030438}
   perlinMagnitude2: {fileID: 1179542408}
   perlinPower2: {fileID: 1115276279}
+  generatedWaterLevel: 0
 --- !u!114 &1777304966
 MonoBehaviour:
   m_ObjectHideFlags: 0
